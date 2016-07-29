@@ -1,0 +1,12 @@
+{##
+ # /views/home/home.twig
+ #}
+
+{% extends 'layout.twig' %}
+
+{% block title %}{{parent()}} - Home :'({% endblock title %}
+
+{% block body %}
+	<div style="color:blue">{{ data.resource.id }}</div>
+    <div style="color:pink">{{ dump( data.resource.paths[05] ) }}</div>
+{% endblock %}
